@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Recharge Web App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mobile Recharge App</h1>
+        <form method="post">
+            <label>Phone Number:</label>
+            <input type="text" name="phone" required><br>
+
+            <label>Amount:</label>
+            <input type="number" name="amount" required><br>
+
+            <label>Service:</label>
+            <select name="service">
+                <option value="data">Mobile Data</option>
+                <option value="airtime">Airtime</option>
+                <option value="betting">Betting Deposit</option>
+                <option value="cable">Cable TV</option>
+            </select><br>
+
+            <label>Platform (MTN, SportyBet, DSTV, etc):</label>
+            <input type="text" name="platform"><br>
+
+            <label>Decoder ID (For Cable only):</label>
+            <input type="text" name="decoder"><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
